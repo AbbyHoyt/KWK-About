@@ -1,9 +1,89 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <!--Tab Name-->
+    <title>Home | Abby's Personal Website</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<h1>Hello, world!</h1>
-<p>My name is Abby.</p>
+    <!--Fav Icon-->
+    <link rel="icon" href="assets/favicon.ico" type="image/png"/>
 
-</body>
+	<!--Link the CSS File-->
+	<link rel="stylesheet" href="/style.css" />
+
+	<!--Link the JavaScript File-->
+	<script src="/script.js" defer></script>
+
+    <!--Link Nav Bar Menu Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Link Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <!--Nav Bar-->
+    <div class="navBar" id="globalNavBar">
+      <a id="home" class="hoverUnderlineAnimation active" href="index.html">Home</a>
+      <a class="hoverUnderlineAnimation" href="robotics.html">Robotics</a>
+      <a class="hoverUnderlineAnimation" href="coding.html">Coding</a>
+      <a href="javascript:void(0);" class="icon" onclick="adjustNavBar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <br>
+
+    <div class="content">
+      <div class="sideBySide">
+        <!--Left Side (Abby Image)-->
+        <div class="sideBySideElement">
+          <img id="homeImage" alt="A headshot of a girl in a green shirt in front of a blue wall." src="assets/abby.jpeg">
+        </div>
+
+        <br>
+
+        <!--Right Side (Header and Intro)-->
+        <div class="sideBySideElement">
+          <h1>Hi, I'm Abby! 👋</h1>
+          <p>Welcome to my (small but colorful) corner of the internet! I live in Washington state and am a student at the University of Washington Bothell. I love coding, robotics, playing flute and piccolo, baking, and spending time with my friends and family (especially my twin sister, who is by far my best friend). If you can't find me, I'm probably off taking too many pictures of my cats, Domino and Oakley. I absolutely adore sprinkles, stickers, the color green, the Oort Cloud, hippos, and strawberry cake.</p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!--Image Gallery-->
+      <section class="galleryContainer">
+        <img class="galleryImage" alt="Two girls in dresses throwing confetti in the air in front of a blue wall." src="assets/confetti.jpeg" draggable="false">
+        <img class="galleryImage" alt="Two hands making a heart shape in front of the northern lights." src="assets/northernLights.jpeg" draggable="false">
+        <img class="galleryImage" alt="Three girls standing in front of a dome shaped floor to ceiling fish tank." src="assets/aquarium.jpeg" draggable="false">
+        <img class="galleryImage" alt="Eight girls sitting in front of happy birthday balloons at a pink table with a pink cake." src="assets/birthday.jpeg" draggable="false">
+        <img class="galleryImage" alt="Eight girls blowing bubbles outside surrounded by lots of green trees." src="assets/bubbles.jpeg" draggable="false">
+        <img class="galleryImage" alt="Five girls in dresses with their hands in the air." src="assets/caenLaida1.jpeg" draggable="false">
+        <img class="galleryImage" alt="Three girls in front of a Mars rover mural." src="assets/museumOfFlight.jpeg" draggable="false">
+        <img class="galleryImage" alt="A tuxedo cat sleeping in a blue blanket with a pink monster toy." src="assets/domino.jpeg" draggable="false">
+        <img class="galleryImage" alt="A gray tabby cat sitting upright on a wooden bay window bench." src="assets/oakley.jpeg" draggable="false">
+        <img class="galleryImage" alt="Three girls holding painted ceramic pieces around a wooden table." src="assets/paintTheTown.jpeg" draggable="false">
+        <img class="galleryImage" alt="A set of older twins smiling beside baby twins who are eating cake and wearing tiaras." src="assets/twins.jpeg" draggable="false">
+        <img class="galleryImage" alt="A set of twins wearing colorful safety glasses." src="assets/safetyGlasses.jpeg" draggable="false">
+        <img class="galleryImage" alt="Five girls standing smiling, two wearing graduation gowns and holding up their graduation caps." src="assets/graduation.jpeg" draggable="false">  
+        <img class="galleryImage" alt="Two girls besides colorful flowers in a greenhouse." src="assets/conservatory.jpeg" draggable="false">  
+        <img class="galleryImage" alt="Two girls with their arms in the air in front of a rainbow." src="assets/rainbow.jpeg" draggable="false">
+        <img class="galleryImage" alt="Four girls and one guy dressed in formal clothes in front of a bright yellow wall." src="assets/hackathon.jpeg" draggable="false"> 
+        <img class="galleryImage" alt="A girl with her arms in the air in front of a woolly mammoth fossil." src="assets/burkeMuseum.jpeg" draggable="false">  
+        <img class="galleryImage" alt="Three girls sitting on a wooden otter bench." src="assets/aquariumOtterBench.jpeg" draggable="false"> 
+        <img class="galleryImage" alt="A girl with two colorful birds on her shoulders." src="assets/parrot.jpeg" draggable="false"> 
+        <img class="galleryImage" alt="Two girls sitting with a big dog on a bean bag." src="assets/christmasWithBailey.jpeg" draggable="false"> 
+      </section>
+    </div>
+
+    <br>
+    
+  </body>
 </html>

@@ -1,0 +1,346 @@
+/*Style HTML*/
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #fffffe;
+    color: #004643;
+}
+  
+/*Style Everything*/
+* {
+    padding: 0;
+    margin: 0;
+}
+  
+/*Style Page Content*/
+.content {
+    margin-top: 60px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+/*Style H1 Text (Page Headers)*/
+h1 {
+    color: #66AB97;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+
+/*Style H2 Text (Section Subheaders)*/
+h2 {
+    color: #66AB97;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+
+/*Style H3 Text (Section Subheaders)*/
+h3 {
+    color: #66AB97;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+  
+/*Style Paragraph Text*/
+p {
+    color: #004643;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+  
+/*Style Bullet Point Lists*/
+ul {
+    margin-left: 30px;
+}
+  
+li {
+    color: #004643;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+  
+/*Style Paragaph Header Text*/
+.paragraphHeader {
+    font-weight: bold;
+    font-style: normal;
+    color: #004643;;
+}
+  
+/*Style Links*/
+a {
+    color: #66AB97;
+}
+
+/*Style Links on Hover*/
+a:hover {
+    color: #467F6F;
+}
+  
+/*Style Nav Bar*/
+.navBar {
+    position: fixed;
+    overflow: hidden;
+    background-color: #004643;
+    top: 0;
+    width: 100%;
+}
+  
+/*Style Nav Bar Links*/
+.navBar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    background-color: #004643;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+  
+/*Style Nav Bar Icon*/
+.navBar .icon {
+    display: none; 
+    background-color: #004643;
+    color: #ffffff;
+}
+  
+/*Style Nav Bar to be Responsive*/
+@media screen and (max-width: 600px) {
+    .navBar a:not(:first-child) {display: none;}
+
+    .navBar a.icon {
+        float: right;
+        display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .navBar.responsive {position: sticky;}
+
+    .navBar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navBar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+  
+/*Remove Margin Between Nav Bar and First Image*/
+@media screen and (max-width: 1275px) {
+    .navBar {
+        margin-bottom: -45px;
+    }
+
+    #home {
+        background-color: #004643;
+        color: #ffffff;
+    }
+}
+  
+/*Style Nav Bar Hover Underline Animation*/
+.hoverUnderlineAnimation {
+    display: inline-block;
+    position: relative;
+}
+  
+.hoverUnderlineAnimation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #66AB97;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+  
+.hoverUnderlineAnimation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+  
+/*Style Home Image*/
+#homeImage {
+    border-radius: 50%;
+    width: 45%;
+    height: auto;
+    border: 10px solid #004643;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+  
+/*Style Image Gallery Flex Box*/
+/*Style Image Gallery Container*/
+  .galleryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+  
+/*Style Image Gallery Images*/
+.galleryImage {
+    margin: 10px 10px;
+    height: 175px;
+    width: auto;
+    border-radius: 5px;
+}
+  
+/*Style Scroll Div*/
+.scrollDiv {
+    background-color: #66AB97;
+    border-radius: 20px;
+    max-height: 500px;
+    max-width: 500px;
+    overflow-y: auto;
+}
+  
+/*Style Scroll Div Images*/
+.scrollDiv img {
+    width: auto;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+  
+/*Style Scroll Div Paragraph Text*/
+.scrollDiv p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Schibsted Grotesk", sans-serif;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+  
+/*Style Side By Side Divs*/
+.sideBySide {
+    margin: 0% -2.5%;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    padding: 0px;
+    justify-content: center;
+    margin-top: -1px;
+    align-items: center;
+}
+  
+/*Style Side By Side Elements*/
+.sideBySideElement {
+    width: 45%;
+    height: auto;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+/*Style Videos in Side By Side Elements*/
+.sideBySideElement iframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    min-height: 225px;
+}
+  
+/*Style Side By Side Divs to be Responsive*/
+@media screen and (max-width: 1000px) {
+    .sideBySide {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2.5%;
+    }
+  
+    .sideBySideElement {
+        width: 100%;
+    }
+}
+  
+/*Style Website Embed*/
+.embed {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 450px;
+    border-radius: 5px;
+}
+
+/*Style Project Sections*/
+.project {
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style Project Image Subsections*/
+.projectImage {
+    width: 15%;
+    height: auto;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Style Project Images*/
+.projectImage img {
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/*Style Project Info Subsections*/
+.projectInfo {
+    width: 85%;
+    height: auto;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Style Projects to be Responsive*/
+@media screen and (max-width: 1200px) {
+    .projectImage {
+        width: 30%;
+    }
+
+    .projectInfo {
+        width: 70%;
+    }
+  
+    .projectImage img {
+        width: 75%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .projectImage, .projectInfo {
+        width: 100%;
+    }
+  
+    .projectImage img {
+        width: 50%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        text-align: center;
+    }
+}
