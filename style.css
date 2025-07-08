@@ -244,8 +244,6 @@ a:hover {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 75%;
-    min-height: 225px;
 }
   
 /*Style Side By Side Divs to be Responsive*/
@@ -259,16 +257,6 @@ a:hover {
     .sideBySideElement {
         width: 100%;
     }
-}
-  
-/*Style Website Embed*/
-.embed {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
-    height: 450px;
-    border-radius: 5px;
 }
 
 /*Style Project Sections*/
